@@ -1,0 +1,16 @@
+# TODO:
+
+- [x] 1: Set up Supabase backend integration and database schema (priority: High)
+- [x] 2: Create core types and interfaces for properties, users, and messages (priority: High)
+- [x] 3: Implement authentication system with login/register pages (priority: High)
+- [x] 11: Debug login authentication issue - check database migrations and add error logging (priority: High)
+- [x] 12: Create error translation utility to convert English Supabase errors to Serbian (priority: High)
+- [x] 13: Update auth service to use error translation for all authentication errors (priority: High)
+- [x] 14: Update login and register forms to display properly translated error messages (priority: High)
+- [x] 4: Build main navigation component with Serbian language support (priority: Medium)
+- [x] 5: Create home page with hero section and featured properties (priority: Medium)
+- [x] 6: Implement property search and filtering functionality (priority: Medium)
+- [x] 7: Build property listing detail page with photo gallery (priority: Medium)
+- [x] 8: Create user dashboard for property management (priority: Medium)
+- [x] 9: Implement property posting form with image upload (priority: Medium)
+- [x] 10: Add messaging system between users and property owners (priority: Low)
