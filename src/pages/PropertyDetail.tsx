@@ -183,7 +183,7 @@ export default function PropertyDetail() {
 
   const images = property.images && property.images.length > 0 
     ? property.images 
-    : [{ image_url: `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent('modern apartment interior, clean and bright, real estate photo')}&image_size=landscape_16_9` }]
+    : [{ image_url: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDgwMCA0NTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0zNzUgMjAwSDM5NVYyMjBIMzc1VjIwMFoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTM1NSAyMjBIMzk1VjI0MEgzNTVWMjIwWiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMzM1IDI0MEg0MTVWMjYwSDMzNVYyNDBaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0zMTUgMjYwSDQzNVYyODBIMzE1VjI2MFoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTMxNSAyODBINDM1VjMwMEgzMTVWMjgwWiIgZmlsbD0iIzlDQTNBRiIvPgo8dGV4dCB4PSI0MDAiIHk9IjMzMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI3Mjg0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5OZW1hIHNsaWtlPC90ZXh0Pgo8L3N2Zz4K' }]
 
   return (
     <div className="min-h-screen bg-gray-50 pt-8">
@@ -206,7 +206,7 @@ export default function PropertyDetail() {
               className="w-full h-full object-cover"
               onError={(e) => {
                 const target = e.target as HTMLImageElement
-                target.src = `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent('modern apartment interior, clean and bright, real estate photo')}&image_size=landscape_16_9`
+                target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDgwMCA0NTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0zNzUgMjAwSDM5NVYyMjBIMzc1VjIwMFoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTM1NSAyMjBIMzk1VjI0MEgzNTVWMjIwWiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMzM1IDI0MEg0MTVWMjYwSDMzNVYyNDBaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0zMTUgMjYwSDQzNVYyODBIMzE1VjI2MFoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTMxNSAyODBINDM1VjMwMEgzMTVWMjgwWiIgZmlsbD0iIzlDQTNBRiIvPgo8dGV4dCB4PSI0MDAiIHk9IjMzMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI3Mjg0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5OZW1hIHNsaWtlPC90ZXh0Pgo8L3N2Zz4K'
               }}
             />
             

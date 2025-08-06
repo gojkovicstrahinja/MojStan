@@ -240,12 +240,12 @@ export default function Dashboard() {
                               src={
                                 property.images && property.images.length > 0
                                   ? property.images[0].image_url
-                                  : `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent('modern apartment interior')}&image_size=square`
+                                  : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik04NSA4NUg5NVY5NUg4NVY4NVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTc1IDk1SDEwNVYxMDVINzVWOTVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik02NSAxMDVIMTE1VjExNUg2NVYxMDVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik02NSAxMTVIMTE1VjEyNUg2NVYxMTVaIiBmaWxsPSIjOUNBM0FGIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2QjcyODQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5lbWEgc2xpa2U8L3RleHQ+Cjwvc3ZnPgo='
                               }
                               alt={property.title}
                               onError={(e) => {
                                 const target = e.target as HTMLImageElement
-                                target.src = `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent('modern apartment interior')}&image_size=square`
+                                target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik04NSA4NUg5NVY5NUg4NVY4NVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTc1IDk1SDEwNVYxMDVINzVWOTVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik02NSAxMDVIMTE1VjExNUg2NVYxMDVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik02NSAxMTVIMTE1VjEyNUg2NVYxMTVaIiBmaWxsPSIjOUNBM0FGIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTQwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2QjcyODQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5lbWEgc2xpa2U8L3RleHQ+Cjwvc3ZnPgo='
                               }}
                             />
                           </div>

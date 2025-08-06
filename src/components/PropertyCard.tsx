@@ -11,7 +11,7 @@ interface PropertyCardProps {
 export default function PropertyCard({ property }: PropertyCardProps) {
   const mainImage = property.images && property.images.length > 0 
     ? property.images[0].image_url 
-    : `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent('modern apartment interior, clean and bright, real estate photo')}&image_size=landscape_4_3`
+    : 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNzUgMTI1SDE4NVYxMzVIMTc1VjEyNVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTE2NSAxMzVIMTk1VjE0NUgxNjVWMTM1WiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMTU1IDE0NUgyMDVWMTU1SDE1NVYxNDVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0xNDUgMTU1SDIxNVYxNjVIMTQ1VjE1NVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTE0NSAxNjVIMjE1VjE3NUgxNDVWMTY1WiIgZmlsbD0iIzlDQTNBRiIvPgo8dGV4dCB4PSIyMDAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNkI3Mjg0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5OZW1hIHNsaWtlPC90ZXh0Pgo8L3N2Zz4K'
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('sr-RS').format(price)
@@ -27,7 +27,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             className="w-full h-48 object-cover"
             onError={(e) => {
               const target = e.target as HTMLImageElement
-              target.src = `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=${encodeURIComponent('modern apartment interior, clean and bright, real estate photo')}&image_size=landscape_4_3`
+              target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNzUgMTI1SDE4NVYxMzVIMTc1VjEyNVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTE2NSAxMzVIMTk1VjE0NUgxNjVWMTM1WiIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMTU1IDE0NUgyMDVWMTU1SDE1NVYxNDVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0xNDUgMTU1SDIxNVYxNjVIMTQ1VjE1NVoiIGZpbGw9IiM5Q0EzQUYiLz4KPHA+dGggZD0iTTE0NSAxNjVIMjE1VjE3NUgxNDVWMTY1WiIgZmlsbD0iIzlDQTNBRiIvPgo8dGV4dCB4PSIyMDAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNkI3Mjg0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5OZW1hIHNsaWtlPC90ZXh0Pgo8L3N2Zz4K'
             }}
           />
           <div className="absolute top-3 left-3">
